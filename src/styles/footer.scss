@@ -1,0 +1,40 @@
+.footer {
+  flex-shrink: 0;
+  background: #2264d5;
+  background-image: linear-gradient(
+    90deg,
+    hsl(223deg 85% 64%) 0%,
+    hsl(223deg 87% 63%) 9%,
+    hsl(223deg 88% 62%) 18%,
+    hsl(223deg 90% 61%) 27%,
+    hsl(223deg 92% 61%) 36%,
+    hsl(223deg 93% 60%) 45%,
+    hsl(223deg 94% 59%) 55%,
+    hsl(223deg 95% 58%) 64%,
+    hsl(223deg 96% 57%) 73%,
+    hsl(223deg 96% 55%) 82%,
+    hsl(223deg 97% 54%) 91%,
+    hsl(223deg 98% 53%) 100%
+  );
+
+  &__container {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__developer {
+    font-size: 1.1em;
+    line-height: 14px;
+    font-family: 'Edu SA Beginner', cursive;
+    color: #FFFFFF;
+  }
+
+  &__rs-logo {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background: transparent url(../assets/svg/rs_school_js.svg) center / contain no-repeat;
+  }
+}

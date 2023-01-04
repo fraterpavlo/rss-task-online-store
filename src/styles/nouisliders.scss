@@ -1,0 +1,58 @@
+#price-filter-range,
+#year-filter-range {
+  margin: 0 auto;
+  width: 95%;
+  height: 8px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
+
+#price-filter-range .noUi-connect,
+#year-filter-range .noUi-connect {
+  background-image: linear-gradient(
+    90deg,
+    hsl(223deg 85% 64%) 0%,
+    hsl(223deg 87% 63%) 9%,
+    hsl(223deg 88% 62%) 18%,
+    hsl(223deg 90% 61%) 27%,
+    hsl(223deg 92% 61%) 36%,
+    hsl(223deg 93% 60%) 45%,
+    hsl(223deg 94% 59%) 55%,
+    hsl(223deg 95% 58%) 64%,
+    hsl(223deg 96% 57%) 73%,
+    hsl(223deg 96% 55%) 82%,
+    hsl(223deg 97% 54%) 91%,
+    hsl(223deg 98% 53%) 100%
+  );
+}
+
+#price-filter-range .noUi-handle,
+#year-filter-range .noUi-handle {
+  width: 20px;
+  height: 20px;
+  right: -7px;
+  top: -7px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    content: '';
+    display: none;
+  }
+}
+
+#price-filter-range .noUi-tooltip,
+#year-filter-range .noUi-tooltip {
+  display: none;
+  font-size: 1em;
+  padding: 5px;
+  left: 50%;
+  bottom: -50%;
+}
+#price-filter-range .noUi-active .noUi-tooltip,
+#year-filter-range .noUi-active .noUi-tooltip {
+  display: block;
+}
